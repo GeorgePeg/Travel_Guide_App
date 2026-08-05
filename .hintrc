@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "development"
+  ],
+  "formatters":[
+    "stylish"
+  ],
+  //Χρήσιμες ρυθμίσεις για τα hints σε HTML tags
+  "hints": {
+    "duplicate-id": "off",
+    "no-inline-styles": "off",
+    "list": "off",
+    "axe/structure": "off"
+  }
+}

@@ -1,0 +1,54 @@
+*,*::before, *::after {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bg-color: #f8f9fa;
+    --text-main: #012865;
+    --text-muted: #555555;
+    --text-secondary: #103b10;
+    --primary-color: #012865;
+    --accent-color: #0d4cff;
+    --card-bg: #fefefe;
+    --shadow-soft: 0 10px 30px rgba(1, 40, 85, 0.09);
+    --shadow-hover: 0 15px 40px rgba(1, 40, 85, 0.25);
+    --transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+html {
+    scroll-behavior: smooth;
+}
+#homeIcon i {
+    color: var(--card-bg);
+}
+.nav-link a {
+    color: var(--bg-color);
+}
+.hero-section{
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15,23,42,0.8)), url('/static/images/Frankfurt_Am_Main.jpg') center/cover no-repeat;
+    padding: 100px 0;
+    border-bottom: 2px solid var(--text-muted);
+
+}
+.hero-section h1 {
+    color: var(--bg-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p {
+    align-items: center;
+    justify-content: center;
+    -webkit-hyphens: auto;
+    -ms-hypens: auto;
+    hyphens: auto;
+    color: var(--card-bg);
+}
+.card-tite h3 {
+    text-align: center;
+    justify-content: center;
+}
+.destination-hero {
+    /* Default εικόνα αν δεν υπάρχει cover_image */
+    --bg-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1600&auto=format&fit=crop'); 
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15,23,42,0.8)),var(--bg-image) center/cover no-repeat;
+    padding: 100px 0;
+}
